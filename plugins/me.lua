@@ -79,7 +79,9 @@ end
   return {
     patterns = {
       "^[!/](me)$",
+      "^زمان$",
     },
     run = run
   }
 end
+--SPIRAN
