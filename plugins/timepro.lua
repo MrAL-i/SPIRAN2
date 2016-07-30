@@ -30,8 +30,8 @@ send_document(get_receiver(msg) , file, ok_cb, false)
 end
 return {
   patterns = {
-     "^([Tt]ime2)$",
-	"^([!/#][Tt]ime2)$",
+     "^([Tt]ime)$",
+	"^([!/#][Tt]ime)$",
   },
   run = run
 }
