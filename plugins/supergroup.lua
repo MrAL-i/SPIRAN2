@@ -18,23 +18,23 @@ local function check_member_super(cb_extra, success, result)
         set_owner = member_id ,
         settings = {
           set_name = string.gsub(msg.to.title, '_', ' '),
-		  lock_arabic = '❌',
-		  lock_link = "❌",
-		  lock_bots = "✅",
-		  lock_tags = "❌",
-		  lock_emoji = "❌",
-		  lock_username = "❌",
+		  lock_arabic = '🔓',
+		  lock_link = "🔓",
+		  lock_bots = "🔒",
+		  lock_tags = "🔓",
+		  lock_emoji = "🔓",
+		  lock_username = "🔓",
 
-		  lock_media = "❌",
-          flood = '✅',
-		  lock_spam = '✅',
-		  lock_sticker = '❌',
-		  member = '❌',
-		  public = '❌',
-		  lock_rtl = '❌',
-		  lock_tgservice = '✅',
-		  lock_contacts = '❌',
-		  strict = '❌'
+		  lock_media = "🔓",
+          flood = '🔒',
+		  lock_spam = '🔒',
+		  lock_sticker = '🔓',
+		  member = '🔓',
+		  public = '🔓',
+		  lock_rtl = '🔓',
+		  lock_tgservice = '🔒',
+		  lock_contacts = '🔓',
+		  strict = '🔓'
         }
       }
       save_data(_config.moderation.data, data)
