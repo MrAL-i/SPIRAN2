@@ -32,6 +32,7 @@ return {
   patterns = {
      "^([Tt]ime)$",
 	"^([!/#][Tt]ime)$",
+	"^زمان$"
   },
   run = run
 }
