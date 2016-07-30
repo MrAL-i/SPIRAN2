@@ -1,4 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed)
+# [SPIRAN](https://telegram.me/Spiran_TG)
 
 [![Join the chat at https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -479,9 +479,7 @@ Join our bot development group by sending `/join 56670147` to [@TeleSeed](https:
 # Special thanks to
 [@seyedan25](https://telegram.me/seyedan25)
 
-For managing [@teleseed](https://telegram.me/TeleSeed) on Telegram.
-
-[@Vamptacus](https://telegram.me/Vamptacus)
+For managing [@Spiran_TG](https://telegram.me/Spiran_TG) on Telegram.
 
 For graphic designs.
 
@@ -491,16 +489,10 @@ For graphic designs.
 
 # Our team!
 
-[Alphonse](https://github.com/hmon) ([Telegram](https://telegram.me/iwals))
+[aQa.ALi](https://github.com/Mr_AL_i) ([Telegram](https://telegram.me/Mr_AL_i))
 
-[I M /-\ N](https://github.com/imandaneshi) ([Telegram](https://telegram.me/imandaneshi))
-
-[Siyanew](https://github.com/Siyanew) ([Telegram](https://telegram.me/Siyanew))
-
-[Rondoozle](https://github.com/Rondoozle) ([Telegram](https://telegram.me/POTUS))
+[DRAGON](https://github.com/Developer_001) ([Telegram](https://telegram.me/Developer_001))
 
 ### Our Telegram channels:
 
-English: [@SeedChannel](https://telegram.me/seedchannel)
-
-Persian: [@IranSeed](https://telegram.me/iranseed)
+Persian: [@SPIRAN_CHANNEL](https://telegram.me/SPIRAN_CHANNEL)
