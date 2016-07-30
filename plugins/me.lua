@@ -1,21 +1,12 @@
 --[[
-################################
-#                              #
-#              Me              #
-#                              #
-#                              #
-#    by @Dragon_Born "Arian"   #
-#                              #
-#                              #
-#    Modified by GPMod Team    #
-#	                       #
-#                              #
-#     Update: 7 June 2016      #
-#                              #
-#                              #
-#           @GPMod             #
-#                              #
-################################
+
+#                             
+#              Me              
+#      by @Dragon_Born "Arian"               
+#      Modified by GPMod Team                       
+#     Update: 7 June 2016                         
+#          @GPMod                     
+
 ]]
 
 do
