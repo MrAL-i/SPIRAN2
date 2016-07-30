@@ -58,7 +58,7 @@ if is_chat_msg(msg) or is_super_group(msg) then
 	else
 		strict = '🔓'
 	end
-		if msg and not msg.service and is_muted(msg.to.id, 'All: ✅') or is_muted_user(msg.to.id, msg.from.id) and not msg.service then
+		if msg and not msg.service and is_muted(msg.to.id, 'All: 🔒') or is_muted_user(msg.to.id, msg.from.id) and not msg.service then
 			delete_msg(msg.id, ok_cb, false)
 			if to_chat then
 			--	kick_user(msg.from.id, msg.to.id)
