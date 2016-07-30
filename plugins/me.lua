@@ -79,7 +79,7 @@ end
   return {
     patterns = {
       "^[!/](me)$",
-      "^من$",
+      "^من$"
     },
     run = run
   }
