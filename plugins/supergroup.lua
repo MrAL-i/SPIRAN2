@@ -921,7 +921,7 @@ local function unlock_group_contacts(msg, data, target)
     local text = 'قفل مخاطبین غیرفعال است.🔓'
 	return reply_msg(msg.id, text, ok_cb, false)
   else
-    data[tostring(target)]['settings']['lock_contacts'] = '❌'
+    data[tostring(target)]['settings']['lock_contacts'] = '🔓'
     save_data(_config.moderation.data, data)
     local text = 'قفل مخاطبین غیرفعال شد.🔓'
 	return reply_msg(msg.id, text, ok_cb, false)
@@ -2528,7 +2528,7 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] set group to: public")
 				return set_public_membermod(msg, data, target)
 			end
-			if matches[2] == '❌' then
+			if matches[2] == '🔓' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] set SuperGroup to: not public")
 				return unset_public_membermod(msg, data, target)
 			end
