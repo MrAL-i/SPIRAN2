@@ -1883,7 +1883,7 @@ local function run(msg, matches)
 				local um_hash = 'msgs:'..msg.from.id..':'..msg.to.id
 				user_info.msgs = tonumber(redis:get(um_hash) or 0)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested SuperGroup ID")
-                                return "💢FɪʀsᴛNᴀᴍᴇ : "..(msg.from.first_name or "---").."\n💢LᴀsᴛNᴀᴍᴇ : "..(msg.from.last_name or "---").."\n💢ƱsεяƝαмє :@"..(msg.from.username or "---").."\n📡Rᴀɴᴋ : "..userrank.."\n🆔Iᗪ : "..msg.from.id.."\n🔢ƤнσηєƝυмвєя : "..number.."\nℹ️ƬσтαℓMєѕѕαgє : "..user_info.msgs.."\n➖➖➖➖➖➖➖➖➖➖\n⭕️SυρεяGяσυρ Nαмε: "..string.gsub(msg.to.print_name, "_", " ").."\n🆔SυρεяGяσυρ Iᗪ : "..msg.to.id end      
+                                return "💢نام : "..(msg.from.first_name or "---").."\n💢نام خانوادگی : "..(msg.from.last_name or "---").."\n💢یوزرنیم :@"..(msg.from.username or "---").."\n📡مقام : "..userrank.."\n🆔Iᗪ : "..msg.from.id.."\n🔢شماره موبایل : "..number.."\nℹ️تعداد پیام ها : "..user_info.msgs.."\n➖➖➖➖➖➖➖➖➖➖\n⭕️نام سوپرگروه : "..string.gsub(msg.to.print_name, "_", " ").."\n🆔آیدی سوپرگروه : "..msg.to.id end      
 		end
 
 		if matches[1] == 'خروج' then
