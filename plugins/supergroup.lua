@@ -2264,11 +2264,11 @@ local function run(msg, matches)
 
 		if matches[1] == 'قفل' and is_momod(msg) then
 			local target = msg.to.id
-			if matches[2] == 'links' then
+			if matches[2] == 'لینک' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked link posting ")
 				return lock_group_links(msg, data, target)
 			end
-			if matches[2] == 'all' then
+			if matches[2] == 'همه' then
 			local safemode ={
 			 lock_group_links(msg, data, target),
 	lock_group_tags(msg, data, target),
@@ -2359,7 +2359,7 @@ local function run(msg, matches)
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked member ")
 				return lock_group_membermod(msg, data, target)
 			end
-			if matches[2]:lower() == 'ار ت ای' then
+			if matches[2]:lower() == 'ار تی ای' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked rtl chars. in names")
 				return lock_group_rtl(msg, data, target)
 			end
@@ -2387,11 +2387,11 @@ local function run(msg, matches)
 
 		if matches[1] == 'بازکردن' and is_momod(msg) then
 			local target = msg.to.id
-			if matches[2] == 'links' then
+			if matches[2] == 'لینک' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked link posting")
 				return unlock_group_links(msg, data, target)
 			end
-			if matches[2] == 'all' then
+			if matches[2] == 'همه' then
 			local dsafemode ={
 			 unlock_group_links(msg, data, target),
 	unlock_group_tags(msg, data, target),
@@ -2418,91 +2418,91 @@ local function run(msg, matches)
 	  }
 				return unlock_group_all(msg, data, target), dsafemode
 			end
-			if matches[2] == 'tags' then
+			if matches[2] == 'تگ' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked tags posting ")
 				return unlock_group_tags(msg, data, target)
 			end
-			if matches[2] == 'leave' then
+			if matches[2] == 'خروج' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked leave ")
 				return unlock_group_leave(msg, data, target)
 			end
-			if matches[2] == 'operator' then
+			if matches[2] == 'اوپراتور' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked operator posting")
 				return unlock_group_operator(msg, data, target)
 			end
-			if matches[2] == 'badword' then
+			if matches[2] == 'حروف بد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked badword posting")
 				return unlock_group_badword(msg, data, target)
 			end
-			if matches[2] == 'number' then
+			if matches[2] == 'اعداد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked number posting")
 				return unlock_group_number(msg, data, target)
 			end
-			if matches[2] == 'reply' then
+			if matches[2] == 'ریپلای' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked reply posting ")
 				return unlock_group_reply(msg, data, target)
 			end
-			if matches[2] == 'fwd' then
+			if matches[2] == 'فوروارد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked fwd posting ")
 				return unlock_group_fwd(msg, data, target)
 			end
-			if matches[2] == 'join' then
+			if matches[2] == 'ورود' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked join ")
 				return unlock_group_join(msg, data, target)
 			end
-			if matches[2] == 'emoji' then
+			if matches[2] == 'اموجی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked emoji posting ")
 				return unlock_group_emoji(msg, data, target)
 			end
-			if matches[2] == 'username' then
+			if matches[2] == 'یوزرنیم' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked username posting ")
 				return unlock_group_username(msg, data, target)
 			end
-			if matches[2] == 'media' then
+			if matches[2] == 'رسانه' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked media posting ")
 				return unlock_group_media(msg, data, target)
 			end
-			if matches[2] == 'bots' then
+			if matches[2] == 'ربات' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked adding bots")
 				return unlock_group_bots(msg, data, target)
 			end
-			if matches[2] == 'spam' then
+			if matches[2] == 'اسپم' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked spam")
 				return unlock_group_spam(msg, data, target)
 			end
-			if matches[2] == 'flood' then
+			if matches[2] == 'فلود' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked flood")
 				return unlock_group_flood(msg, data, target)
 			end
-			if matches[2] == 'arabic' then
+			if matches[2] == 'عربی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked Arabic")
 				return unlock_group_arabic(msg, data, target)
 			end
-			if matches[2] == 'member' then
+			if matches[2] == 'افراد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked member ")
 				return unlock_group_membermod(msg, data, target)
 			end
-			if matches[2]:lower() == 'rtl' then
+			if matches[2]:lower() == 'ار تی ال' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked RTL chars. in names")
 				return unlock_group_rtl(msg, data, target)
 			end
-			if matches[2]:lower() == 'english' then
+			if matches[2]:lower() == 'انگلیسی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked english chars. in names")
 				return unlock_group_english(msg, data, target)
 			end
-				if matches[2] == 'tgservice' then
+				if matches[2] == 'سرویس تیجی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked tgservice actions")
 				return unlock_group_tgservice(msg, data, target)
 			end
-			if matches[2] == 'sticker' then
+			if matches[2] == 'استیکر' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked sticker posting")
 				return unlock_group_sticker(msg, data, target)
 			end
-			if matches[2] == 'contacts' then
+			if matches[2] == 'مخاطبین' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked contact posting")
 				return unlock_group_contacts(msg, data, target)
 			end
-			if matches[2] == 'strict' then
+			if matches[2] == 'سخت گیرانه' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked disabled strict settings")
 				return disable_strict_rules(msg, data, target)
 			end
