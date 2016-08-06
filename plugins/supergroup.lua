@@ -12,7 +12,7 @@ local function check_member_super(cb_extra, success, result)
     if member_id ~= our_id then
       -- SuperGroup configuration
       data[tostring(msg.to.id)] = {
-        group_type = 'SuperGroup',
+        group_type = 'سوپرگروه',
 		long_id = msg.to.peer_id,
 		moderators = {},
         set_owner = member_id ,
@@ -69,7 +69,7 @@ local function check_member_superrem(cb_extra, success, result)
       end
       data[tostring(groups)][tostring(msg.to.id)] = nil
       save_data(_config.moderation.data, data)
-	  local text = '❌SuperGroup has been removed❌'
+	  local text = '❌سوپرگروه حذف شد❌'
       return reply_msg(msg.id, text, ok_cb, false)
     end
   end
