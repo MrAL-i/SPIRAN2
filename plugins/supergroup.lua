@@ -2295,91 +2295,91 @@ local function run(msg, matches)
 	  }
 				return lock_group_all(msg, data, target), safemode
 			end
-			if matches[2] == 'tags' then
+			if matches[2] == 'تگ' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked tags posting ")
 				return lock_group_tags(msg, data, target)
 			end
-			if matches[2] == 'leave' then
+			if matches[2] == 'خروج' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked leave ")
 				return lock_group_leave(msg, data, target)
 			end
-			if matches[2] == 'operator' then
+			if matches[2] == 'اوپراتور' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked operator posting ")
 				return lock_group_operator(msg, data, target)
 			end
-			if matches[2] == 'badword' then
+			if matches[2] == 'حروف بد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked badword posting ")
 				return lock_group_badword(msg, data, target)
 			end
-			if matches[2] == 'number' then
+			if matches[2] == 'اعداد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked number posting ")
 				return lock_group_number(msg, data, target)
 			end
-			if matches[2] == 'reply' then
+			if matches[2] == 'ریپلای' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked reply posting ")
 				return lock_group_reply(msg, data, target)
 			end
-			if matches[2] == 'fwd' then
+			if matches[2] == 'فوروارد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked fwd posting ")
 				return lock_group_fwd(msg, data, target)
 			end
-			if matches[2] == 'join' then
+			if matches[2] == 'ورود' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked join ")
 				return lock_group_join(msg, data, target)
 			end
-			if matches[2] == 'emoji' then
+			if matches[2] == 'اموجی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked emoji posting ")
 				return lock_group_emoji(msg, data, target)
 			end
-			if matches[2] == 'username' then
+			if matches[2] == 'یوزرنیم' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked username posting ")
 				return lock_group_username(msg, data, target)
 			end
-			if matches[2] == 'media' then
+			if matches[2] == 'رسانه' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked media posting ")
 				return lock_group_media(msg, data, target)
 			end
-			if matches[2] == 'bots' then
+			if matches[2] == 'ربات' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked adding bots  ")
 				return lock_group_bots(msg, data, target)
 			end
-			if matches[2] == 'spam' then
+			if matches[2] == 'اسپم' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked spam ")
 				return lock_group_spam(msg, data, target)
 			end
-			if matches[2] == 'flood' then
+			if matches[2] == 'فلود' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked flood ")
 				return lock_group_flood(msg, data, target)
 			end
-			if matches[2] == 'arabic' then
+			if matches[2] == 'عربی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
 				return lock_group_arabic(msg, data, target)
 			end
-			if matches[2] == 'member' then
+			if matches[2] == 'افراد' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked member ")
 				return lock_group_membermod(msg, data, target)
 			end
-			if matches[2]:lower() == 'rtl' then
+			if matches[2]:lower() == 'ار ت ای' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked rtl chars. in names")
 				return lock_group_rtl(msg, data, target)
 			end
-			if matches[2]:lower() == 'english' then
+			if matches[2]:lower() == 'انگلیسی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked english chars. in names")
 				return lock_group_english(msg, data, target)
 			end
-			if matches[2] == 'tgservice' then
+			if matches[2] == 'سرویس تیجی' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked Tgservice Actions")
 				return lock_group_tgservice(msg, data, target)
 			end
-			if matches[2] == 'sticker' then
+			if matches[2] == 'استیکر' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked sticker posting")
 				return lock_group_sticker(msg, data, target)
 			end
-			if matches[2] == 'contacts' then
+			if matches[2] == 'مخاطبین' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked contact posting")
 				return lock_group_contacts(msg, data, target)
 			end
-			if matches[2] == 'strict' then
+			if matches[2] == 'سخت گیرانه' then
 				savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked enabled strict settings")
 				return enable_strict_rules(msg, data, target)
 			end
